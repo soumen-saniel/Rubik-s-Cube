@@ -1,0 +1,321 @@
+body 
+{
+    margin:0px;
+    text-align:center;
+    -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#menu_btn
+{
+    top:90%;
+    position:fixed;
+    left:95%;
+    width:32px;
+    height:32px;
+    background:transparent;
+    border:#AAA 1px solid;
+    border-radius:2px;
+    cursor:pointer;
+    padding:2px 5px;
+    z-index:100000;
+}
+#menu_btn:hover
+{
+    border: yellow 2px solid;
+    -webkit-box-shadow:0px 0px 8px yellow;
+}
+#di1
+{
+    width:30px;
+    height:4px;
+    background:white;
+    margin:5px 0px;
+    -webkit-border-radius:4px;
+    -webkit-transition:-webkit-transform 0.7s linear 0s,width 0.7s linear 0s,margin 0.7s linear 0s;
+}
+#di2
+{
+    width:30px;
+    height:4px;
+    background:white;
+    margin:5px 0px;
+    -webkit-border-radius:4px;
+}
+#di3
+{
+    width:30px;
+    height:4px;
+    background:white;
+    margin:5px 0px;
+    -webkit-border-radius:4px;
+    -webkit-transition:-webkit-transform 0.7s linear 0s,width 0.7s linear 0s,margin 0.7s linear 0s;
+}
+/*#menu_btn:hover #di1
+{
+    -webkit-transform: rotate(30deg);
+    width:15px;
+    margin:10px 0px -5px 14px;
+}
+#menu_btn:hover #di2
+{
+}
+#menu_btn:hover #di3
+{
+    -webkit-transform: rotate(-30deg);
+    width:15px;
+     margin:-5px 0px 10px 14px;
+}*/
+#menu_slide
+{
+    z-index:1;
+    margin-top:0px;
+    right:-1360px;
+    position:fixed;
+    top:150px;
+    height:515px;
+    width:1350px;
+    -webkit-box-shadow: 0px 0px 8px #333;
+    background: rgba(51, 51, 51,0.5);
+    -pie-background:  rgba(51, 51, 51,0.5);
+    -webkit-transition:right 0.5s linear 0s;
+}
+#menu_slide> div
+{
+    position:absolute;
+    width:1250px;
+    height:475px;
+    margin:20px 40px 20px 20px;
+    background: rgba(255, 255, 0, 0.5);
+    -pie-background:  rgba(255, 255, 0, 0.5);
+}
+#wrapper
+{
+    width:auto;
+    height:10000px;
+    z-index:1;
+    background: -webkit-linear-gradient(gray,white);
+    margin-top:50px;
+}
+#parallax_lyr_1 
+{
+    position:fixed;
+    background:url(img/waves.jpg) no-repeat;
+    top:0px;
+    width:100%;
+    height:780px;
+    z-index:1;
+    -webkit-filter: blur(0px);
+    -webkit-transition:all 0.6s linear 0s;
+}
+#parallax_lyr_3
+{
+    position:fixed;
+    background:url(img/myname.fw.png) no-repeat 650px 180px;
+    top:0px;
+    width:100%;
+    height:812px;
+    z-index:1;
+}
+#parallax_lyr_2
+{
+    position:fixed;
+    background:url(img/lighthouse.fw.png) no-repeat 0px 100px;
+    top:0px;
+    width:100%;
+    height:5000px;
+    z-index:1;
+    -webkit-filter: blur(5px);
+    -webkit-transition:all 0.6s linear 0s;
+}
+#parallax_lyr_2 > div 
+{
+    margin-top:851px;
+    height:1000px;
+    width:100%;
+    background: #1A2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #1A2980, #26D0CE);
+    background: -o-linear-gradient(right, #1A2980, #26D0CE);
+    background: linear-gradient(right, #1A2980, #26D0CE); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+COPY TO CLIPBOARD
+        
+}
+#parallax_lyr_2 > div > img 
+{
+    margin-top:0px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+#pagetop
+{ 
+    z-index:2;
+    position:fixed;
+    color: #fff; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    font-size:20px;
+    font-weight:bold;
+    font-family:'Lucida Calligraphy';
+    top:0px;
+    width:100%;
+    height:100px;
+    background-image:url(img/topbackgd.png);
+    color: #FFF;
+    padding-top:40px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+    -webkit-transition:height 0.3s linear 0s,padding 0.3s linear 0s;
+}
+#pagetop> #navbar
+{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:50px;
+    background-image:url(img/navbackgd.fw.png);
+    z-index:2;
+    overflow:visible;
+    -webkit-transition:height 0.3s linear 0s; 
+}
+#pagetop> #navbar> #sections_panel
+{
+    position:absolute;
+    height:0px;
+    width:550px;
+    left:40px;
+    margin-top:50px;
+    background-image:url(img/sectionbackgd.fw.png);
+    z-index:10000;
+    overflow:hidden;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+    -webkit-border-radius:0px 0px 8px 8px;
+    -webkit-transition:height 0.6s linear 0s;
+}
+#pagetop > #navbar > #sections_panel > #content_holder 
+{
+    position:absolute;
+    margin:0px 10px 10px 10px;
+    width:89%;
+    padding:20px;
+    height:250px;
+    top:0%;
+    background-image:url(img/navcontentbg.fw.png);
+    -webkit-border-radious:8px;
+    overflow:hidden;
+    /*text-shadow: 0px 1px 1px #4d4d4d; color: #222; font: 20px 'LeagueGothicRegular';*/
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+/*div#pagetop> #navbar> #logo
+{
+    float:left;
+    height:160px;
+    width:40px;
+    margin:5px 0px 0px 10px;
+    font-size:30px;
+    color:Black;
+}*/
+div#pagetop> #navbar> #btn_holder
+{ 
+    float:left;
+    width:240px;
+    height:40px;
+    padding-top:10px;
+}
+.myButton
+{
+    height:30px;
+    width:120px;
+    background:-webkit-linear-gradient(90deg, #C04848 10%, #480048 90%);
+    -webkit-border-radius:3px 3px 3px 3px;
+    border:0px;
+    text-align:center;
+    display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.myButton:active 
+{
+  
+    background: -webkit-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* IE10 */
+    background:      -o-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* W3C */
+    -webkit-box-shadow:0px 4px 10px black;
+       -moz-box-shadow:0px 4px 10px black;
+        -ms-box-shadow:0px 4px 10px black;
+         -o-box-shadow:0px 4px 10px black;
+}
+.myButton:hover 
+{
+  
+    background: -webkit-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* IE10 */
+    background:      -o-linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* Opera 11.10+ */
+    background:         linear-gradient(0deg, #E6DADA 10%, #274046 90%); /* W3C */
+    -webkit-box-shadow:0px 4px 10px black;
+       -moz-box-shadow:0px 4px 10px black;
+        -ms-box-shadow:0px 4px 10px black;
+         -o-box-shadow:0px 4px 10px black;
+}
+#cube_wrapper 
+{
+    margin-top:200px;
+    width:100%;
+    height:600px;
+    /*background:white;*/
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 200px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+.face {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  padding: 20px;
+  border:1px white solid;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+#cube .one  {
+  -webkit-transform: rotateX(90deg) translateZ(200px);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(200px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+}*/
+/*@keyframes spinX {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+#cube {
+  animation: spinX 15s infinite linear;
+}*/
+
+/*color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95; letter-spacing: 5px; font: 80px 'MisoRegular';*/
